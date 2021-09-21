@@ -1,21 +1,27 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Localiza.Frotas.Infra.Singleton;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace Localiza.Frotas.Controllers
+namespace Localiza.Frotas.Api.Controllers
 {
     [Route("api/v1/[controller]")]
     [ApiController]
     public class SingletonController : ControllerBase
     {
-        [HttpGet()]
-        public IActionResult Get()
+        public SingletonController(SingletonContainer singletonContainer)
         {
-            var singleton = Singleton.Instance;
-            return Ok(singleton);
+            SingletonContainer = singletonContainer;
+        }
+
+        public SingletonContainer SingletonContainer { get; }
+
+        [HttpGet("{id}")]
+        public IActionResult Get(int id)
+        {
+            return id switch
+            {
+                1 => Ok(SingletonContainer),
+                _ => Ok(Singleton.Instance)
+            };
         }
     }
 }

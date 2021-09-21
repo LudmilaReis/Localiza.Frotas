@@ -11,3 +11,10 @@ namespace Localiza.Frotas.Infra.Singleton
         public Guid Id { get; } = Guid.NewGuid();
     }
 }
+
+namespace Localiza.Frotas.Infra
+{
+    public class SingletonContainer
+    {
+    }
+}

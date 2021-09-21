@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Localiza.Frotas.Domain
 {
@@ -15,5 +12,12 @@ namespace Localiza.Frotas.Domain
         void Update(Veiculo veiculo);
 
 
+    }
+}
+
+namespace Localiza.Frotas.Domain
+{
+    public class IVeiculoRepository
+    {
     }
 }

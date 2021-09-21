@@ -75,6 +75,24 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Localiza.Frotas.Domain/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Localiza.Frotas.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Localiza.Frotas.Domain.dll": {}
+        }
+      },
+      "Localiza.Frotas.Infra/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Localiza.Frotas.Infra.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Localiza.Frotas.Infra.dll": {}
+        }
       }
     }
   },
@@ -185,10 +203,22 @@
         "swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Localiza.Frotas.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Localiza.Frotas.Domain/Localiza.Frotas.Domain.csproj",
+      "msbuildProject": "../Localiza.Frotas.Domain/Localiza.Frotas.Domain.csproj"
+    },
+    "Localiza.Frotas.Infra/1.0.0": {
+      "type": "project",
+      "path": "../Localiza.Frotas.Infra/Localiza.Frotas.Infra.csproj",
+      "msbuildProject": "../Localiza.Frotas.Infra/Localiza.Frotas.Infra.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Localiza.Frotas.Domain >= 1.0.0",
+      "Localiza.Frotas.Infra >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -218,7 +248,14 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Micro-1\\source\\repos\\LocalizaFrotas\\Localiza.Frotas.Domain\\Localiza.Frotas.Domain.csproj": {
+              "projectPath": "C:\\Users\\Micro-1\\source\\repos\\LocalizaFrotas\\Localiza.Frotas.Domain\\Localiza.Frotas.Domain.csproj"
+            },
+            "C:\\Users\\Micro-1\\source\\repos\\LocalizaFrotas\\Localiza.Frotas.Infra\\Localiza.Frotas.Infra.csproj": {
+              "projectPath": "C:\\Users\\Micro-1\\source\\repos\\LocalizaFrotas\\Localiza.Frotas.Infra\\Localiza.Frotas.Infra.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

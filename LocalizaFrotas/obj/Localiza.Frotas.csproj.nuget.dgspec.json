@@ -4,6 +4,26 @@
     "C:\\Users\\Micro-1\\source\\repos\\LocalizaFrotas\\LocalizaFrotas\\Localiza.Frotas.csproj": {}
   },
   "projects": {
+    "C:\\Users\\Micro-1\\source\\repos\\LocalizaFrotas\\Localiza.Frotas.Domain\\Localiza.Frotas.Domain.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Micro-1\\source\\repos\\LocalizaFrotas\\Localiza.Frotas.Domain\\Localiza.Frotas.Domain.csproj",
+        "projectName": "Localiza.Frotas.Domain",
+        "projectPath": "C:\\Users\\Micro-1\\source\\repos\\LocalizaFrotas\\Localiza.Frotas.Domain\\Localiza.Frotas.Domain.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\Micro-1\\source\\repos\\LocalizaFrotas\\Localiza.Frotas.Infra\\Localiza.Frotas.Infra.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Micro-1\\source\\repos\\LocalizaFrotas\\Localiza.Frotas.Infra\\Localiza.Frotas.Infra.csproj",
+        "projectName": "Localiza.Frotas.Infra",
+        "projectPath": "C:\\Users\\Micro-1\\source\\repos\\LocalizaFrotas\\Localiza.Frotas.Infra\\Localiza.Frotas.Infra.csproj"
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "C:\\Users\\Micro-1\\source\\repos\\LocalizaFrotas\\LocalizaFrotas\\Localiza.Frotas.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -27,7 +47,14 @@
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Micro-1\\source\\repos\\LocalizaFrotas\\Localiza.Frotas.Domain\\Localiza.Frotas.Domain.csproj": {
+                "projectPath": "C:\\Users\\Micro-1\\source\\repos\\LocalizaFrotas\\Localiza.Frotas.Domain\\Localiza.Frotas.Domain.csproj"
+              },
+              "C:\\Users\\Micro-1\\source\\repos\\LocalizaFrotas\\Localiza.Frotas.Infra\\Localiza.Frotas.Infra.csproj": {
+                "projectPath": "C:\\Users\\Micro-1\\source\\repos\\LocalizaFrotas\\Localiza.Frotas.Infra\\Localiza.Frotas.Infra.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
