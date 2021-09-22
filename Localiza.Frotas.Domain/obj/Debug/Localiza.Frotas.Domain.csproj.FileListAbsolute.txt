@@ -1,0 +1,10 @@
+C:\Users\Micro-1\source\repos\LocalizaFrotas\Localiza.Frotas.Domain\bin\Debug\Localiza.Frotas.Domain.dll
+C:\Users\Micro-1\source\repos\LocalizaFrotas\Localiza.Frotas.Domain\bin\Debug\Localiza.Frotas.Domain.pdb
+C:\Users\Micro-1\source\repos\LocalizaFrotas\Localiza.Frotas.Domain\bin\Debug\Microsoft.Analytics.Interfaces.dll
+C:\Users\Micro-1\source\repos\LocalizaFrotas\Localiza.Frotas.Domain\bin\Debug\Microsoft.Analytics.Interfaces.Streaming.dll
+C:\Users\Micro-1\source\repos\LocalizaFrotas\Localiza.Frotas.Domain\bin\Debug\Microsoft.Analytics.Types.dll
+C:\Users\Micro-1\source\repos\LocalizaFrotas\Localiza.Frotas.Domain\obj\Debug\Localiza.Frotas.Domain.csproj.AssemblyReference.cache
+C:\Users\Micro-1\source\repos\LocalizaFrotas\Localiza.Frotas.Domain\obj\Debug\Localiza.Frotas.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Micro-1\source\repos\LocalizaFrotas\Localiza.Frotas.Domain\obj\Debug\Localiza.Frotas.Domain.csproj.CopyComplete
+C:\Users\Micro-1\source\repos\LocalizaFrotas\Localiza.Frotas.Domain\obj\Debug\Localiza.Frotas.Domain.dll
+C:\Users\Micro-1\source\repos\LocalizaFrotas\Localiza.Frotas.Domain\obj\Debug\Localiza.Frotas.Domain.pdb

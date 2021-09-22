@@ -4,6 +4,7 @@ using Localiza.Frotas.Infra.Repository.EF;
 using Localiza.Frotas.Infra.Singleton;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.Azure.KeyVault.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -11,6 +12,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
 using System;
 using System.IO;
+using System.Reflection;
 
 namespace Localiza.Frotas
 {
@@ -30,17 +32,30 @@ namespace Localiza.Frotas
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "Localiza.Frotas", Version = "v1", 
+                    Description = "API - Frotas" });
+
+                var basePath = AppDomain.CurrentDomain.BaseDirectory;
+                var fileName = typeof(Startup).GetTypeInfo().Assembly.GetName().Name + ".xml";
+                c.IncludeXmlComments(Path.Combine(basePath, fileName));
+            });
+            /*services.AddSwaggerGen(c =>
+            {
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Title = "Localiza.Frotas",
                     Description = "API - Frotas",
-                    Version = "v1"
+                    Version = "v1",
+                    Contact = new Contact
+                    {
+                        Name = "Ludmila Reis",
+                        Url = "https://github.com/LudmilaReis"
+                    }
                 });
 
-                var apiPath = Path.Combine(AppContext.BaseDirectory, "Localiza.Frotas.xml");
-                c.IncludeXmlComments(apiPath);
-            });
-
+               var apiPath = Path.Combine(AppContext.BaseDirectory, "Localiza.Frotas.xml");
+                c.IncludeXmlComments(apiPath);*/
+        
             services.AddTransient<IVeiculoRepository, FrotaRepository>();
             services.AddTransient<IVeiculoDetran, VeiculoDetranFacade>();
 
