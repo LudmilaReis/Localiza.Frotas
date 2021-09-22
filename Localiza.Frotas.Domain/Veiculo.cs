@@ -2,7 +2,7 @@
 
 namespace Localiza.Frotas.Domain
 {
-    class Veiculo
+    public class Veiculo
     {
         public  Guid Id { get; set; }
         public string Placa { get; set; }

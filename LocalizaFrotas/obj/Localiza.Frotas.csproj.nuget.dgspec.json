@@ -18,7 +18,16 @@
       "restore": {
         "projectUniqueName": "C:\\Users\\Micro-1\\source\\repos\\LocalizaFrotas\\Localiza.Frotas.Infra\\Localiza.Frotas.Infra.csproj",
         "projectName": "Localiza.Frotas.Infra",
-        "projectPath": "C:\\Users\\Micro-1\\source\\repos\\LocalizaFrotas\\Localiza.Frotas.Infra\\Localiza.Frotas.Infra.csproj"
+        "projectPath": "C:\\Users\\Micro-1\\source\\repos\\LocalizaFrotas\\Localiza.Frotas.Infra\\Localiza.Frotas.Infra.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {
+              "C:\\Users\\Micro-1\\source\\repos\\LocalizaFrotas\\Localiza.Frotas.Domain\\Localiza.Frotas.Domain.csproj": {
+                "projectPath": "C:\\Users\\Micro-1\\source\\repos\\LocalizaFrotas\\Localiza.Frotas.Domain\\Localiza.Frotas.Domain.csproj"
+              }
+            }
+          }
+        }
       },
       "frameworks": {
         "net472": {}
@@ -67,9 +76,21 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[5.6.3, )"
+              "version": "[6.2.1, )"
             }
           },
           "imports": [

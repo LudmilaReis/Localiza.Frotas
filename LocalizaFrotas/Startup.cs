@@ -1,6 +1,10 @@
+using Localiza.Frotas.Domain;
+using Localiza.Frotas.Infra.Facade;
+using Localiza.Frotas.Infra.Repository.EF;
 using Localiza.Frotas.Infra.Singleton;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -36,7 +40,17 @@ namespace Localiza.Frotas
                 var apiPath = Path.Combine(AppContext.BaseDirectory, "Localiza.Frotas.xml");
                 c.IncludeXmlComments(apiPath);
             });
+
+            services.AddTransient<IVeiculoRepository, FrotaRepository>();
+            services.AddTransient<IVeiculoDetran, VeiculoDetranFacade>();
+
             services.AddSingleton<SingletonContainer>();
+            services.AddDbContext<FrotaContext>(opt =>
+                                               opt.UseInMemoryDatabase("Frota"));
+
+            services.AddHttpClient();
+
+            services.Configure<DetranOptions>(Configuration.GetSection("DetranOptions"));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -5,6 +5,6 @@ namespace Localiza.Frotas.Domain
 {
     public interface IVeiculoDetran
     {
-        public Task AgendarVistoriaDetran(Guid veiculoId);
+        Task AgendarVistoriaDetran(Guid veiculoId);
     }
 }
